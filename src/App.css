@@ -1,38 +1,110 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background: #131518;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #969fad;
+}
+
+button {
+  background: #fc7614;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 45px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #fc7614;
+}
+
+.card {
+  max-width: 412px;
+  background: #232a34;
+  padding: 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cardThanks {
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.thanksText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #fc7614;
+  background: #262e38;
+  padding: 5px 25px;
+  border-radius: 45px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttonsRatingContainer {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.buttonsRating {
+  background: #262e38;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  transition: 0.5s;
+  cursor: pointer;
+  color: #7c8798;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.buttonsRating:hover {
+  background: #7c8798;
+  color: #ffffff;
+}
+
+.active {
+  background: #fc7614;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active:hover {
+  background: #fc7614;
+  color: white;
 }
